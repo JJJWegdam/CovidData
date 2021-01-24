@@ -19,7 +19,7 @@ def _our_world_in_data() -> None:
 
 
 def _reproductiegetal() -> None:
-    print('Fetching Reproductiegetal from https://coronadashboard.rijksoverheid.nl/')
+    print('Fetching from https://coronadashboard.rijksoverheid.nl/')
     json_path = Path('./data_raw/reproductiegetal.json')
     csv_path = Path('./data/reproductiegetal.csv')
     urlretrieve('https://data.rivm.nl/covid-19/COVID-19_reproductiegetal.json', json_path)
